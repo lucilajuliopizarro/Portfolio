@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!--Importa Icon Font de google-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- compila y manifiesta los CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <div class="container section">
+      <div class="row">
+        <div class="col s12">
+          <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="img/fondo1.jpeg" />
+                <!-- random image -->
+                <div class="caption center-align">
+                  <h2>
+                    Bienvenido a mi Historia
+                  </h2>
+                  <h4>
+                    "El viaje comienza en informática, cambiando mi vida en el
+                    camino de la búsqueda de un constante aprendizaje y
+                    superación"
+                  </h4>
+                  <h5 class="ligth blue-text text-lighten-3">
+                    Autor:Lucila Julio Pizarro
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <img src="img/fondo2.jpeg" />
+                <!-- random image -->
+                <div class="caption left-align">
+                  <h3>Left Aligned Caption</h3>
+                  <h5 class="ligth blue-text text-lighten-3">
+                    Here's our small slogan.
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <img src="img/fondo3.jpeg" />
+                <!-- random image -->
+                <div class="caption right-align">
+                  <h3>Right Aligned Caption</h3>
+                  <h5 class="ligth blue-text text-lighten-3">
+                    Here's our small slogan.
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <img src="img/fondo4.jpeg" />
+                <!-- random image -->
+                <div class="caption center-align">
+                  <h3>This is our big Tagline!</h3>
+                  <h5 class="ligth blue-text text-lighten-3">
+                    Here's our small slogan.
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <img src="img/fondo5.jpeg" />
+                <!-- random image -->
+                <div class="caption left-align">
+                  <h3>This is our big Tagline!</h3>
+                  <h5 class="ligth blue-text text-lighten-3">
+                    Here's our small slogan.
+                  </h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="section">
+            <img
+              src="img/fondo3.jpeg"
+              alt=""
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="section">
+            <img
+              src="img/fondo4.jpeg"
+              alt=""
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="section">
+            <img
+              src="img/fondo3.jpeg"
+              alt=""
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="section">
+            <img
+              src="img/fondo4.jpeg"
+              alt=""
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- compila y manifiesta JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems, {
+          height: 400,
+          interval: 10000
+        });
+        var elems = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems);
+      });
+    </script>
+  </body>
+</html>
