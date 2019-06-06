@@ -29,7 +29,7 @@ body {
 }
 
 .letra {
-  color: black;
+  color: rgb(3, 29, 31);
   font-weight: 200;
   text-align: center;
   font-family: 'Dancing Script', cursive;
@@ -54,4 +54,14 @@ img {
 .card-panel {
   height: 70px;
   padding: 1px;
+}
+.card-panell {
+  background: blanchedalmond;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15rem);
+  grid-gap: 1.5rem;
+  justify-content: space-between;
+  align-content: flex-start;
 }
